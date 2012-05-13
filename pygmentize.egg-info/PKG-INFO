@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: pygmentize
+Version: 0.1dev-20120513
+Summary: A widget that highlights some source code using pygments
+Home-page: UNKNOWN
+Author: Moritz Schlarb
+Author-email: mail@moritz-schlarbde
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: toscawidgets.widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Web Environment :: ToscaWidgets
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Widget Sets
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

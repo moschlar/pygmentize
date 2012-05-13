@@ -1,0 +1,2 @@
+recursive-include pygmentize/templates *
+recursive-include pygmentize/static *

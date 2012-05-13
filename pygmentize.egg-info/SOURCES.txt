@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.cfg
+setup.py
+pygmentize/__init__.py
+pygmentize/release.py
+pygmentize/samples.py
+pygmentize/widgets.py
+pygmentize.egg-info/PKG-INFO
+pygmentize.egg-info/SOURCES.txt
+pygmentize.egg-info/dependency_links.txt
+pygmentize.egg-info/entry_points.txt
+pygmentize.egg-info/not-zip-safe
+pygmentize.egg-info/paster_plugins.txt
+pygmentize.egg-info/requires.txt
+pygmentize.egg-info/top_level.txt

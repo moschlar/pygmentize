@@ -62,5 +62,5 @@ class Pygmentize(Widget):
             lexer = get_lexer_by_name(d.lexer)
             d.source = highlight(d.source, lexer, self.formatter)
         except:
-            pass
+            d.source = '<pre>%s</pre>' % d.source
         

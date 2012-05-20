@@ -1,6 +1,6 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: pygmentize
-Version: 0.1dev-20120513
+Version: 0.1
 Summary: A widget that highlights some source code using pygments
 Home-page: UNKNOWN
 Author: Moritz Schlarb

@@ -1,4 +1,4 @@
-from tw.api import Widget, JSLink, CSSLink, CSSSource
+from tw.api import Widget, JSLink, CSSLink, CSSSource, JSSource
 
 from pygments import highlight
 from pygments.lexers import get_lexer_by_name
@@ -30,6 +30,20 @@ class MyHtmlFormatter(HtmlFormatter):
 
 # my_css = CSSLink(modname=__name__, filename='static/pygmentize.css')
 
+highline_js = JSSource(src="""
+function highline(container, name) {
+  var root = document.getElementById(container);
+  var high = root.getElementsByClassName("hll");
+  for (var i=0; i < high.length; ++i) {
+    high[i].classList.remove("hll");
+  }
+  var line = root.getElementsByClassName(name);
+  for (var j=0; j < line.length; ++j) {
+    line[j].classList.add("hll");
+  }
+}
+""")
+
 class Pygmentize(Widget):
     template = """<div id="${id}" class="${css_class}">${source}</div>"""
 
@@ -52,6 +66,7 @@ class Pygmentize(Widget):
                                          lineanchors=lineanchors, full=full,
                                          title=title)
         self.css = [CSSSource(src=self.formatter.get_style_defs())]
+        self.javascript = [highline_js]
 
     def update_params(self, d):
         """This method is called every time the widget is displayed. It's task

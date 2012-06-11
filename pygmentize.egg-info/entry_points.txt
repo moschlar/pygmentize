@@ -1,6 +1,0 @@
-
-        [toscawidgets.widgets]
-        # Register your widgets so they can be listed in the WidgetBrowser
-        widgets = pygmentize
-        samples = pygmentize.samples
-    
